@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://192.168.1.104/cominfo?characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8
+  jpa:
+    show-sql: true
+    #springboot升级后默认的freemaker模板后缀不在是ftl,而是ftlh
+  freemarker:
+    suffix: .ftl
+server:
+  servlet:
+    context-path: /cominfo
